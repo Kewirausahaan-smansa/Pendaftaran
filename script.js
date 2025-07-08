@@ -1,23 +1,12 @@
 document.getElementById('registrationForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    const checkbox = document.getElementById('terms');
-    if (!checkbox.checked) {
-        alert('Harap setujui syarat dan ketentuan terlebih dahulu');
-        return;
-    }
 
-    // Validate fields
-    const nama = document.getElementById('nama').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const telepon = document.getElementById('telepon').value.trim();
-    const kelas = document.getElementById('kelas').value.trim();
-    const alasan = document.getElementById('alasan').value.trim();
-
-    if (!nama || !email || !telepon || !kelas || !alasan) {
-        alert('Harap isi semua bidang yang wajib diisi');
-        return;
-    }
+    // Ambil data dari form
+    const nama = document.getElementById('nama').value;
+    const email = document.getElementById('email').value;
+    const telepon = document.getElementById('telepon').value;
+    const kelas = document.getElementById('kelas').value;
+    const alasan = document.getElementById('alasan').value;
 
     // Kirim data ke Google Sheets
     fetch('https://script.google.com/macros/s/https://docs.google.com/spreadsheets/d/1Bt1q0OGfGVoHuOOQflfQLwX0U7uykNzgAfEiFVJDc3k/edit?usp=sharing/exec', {
