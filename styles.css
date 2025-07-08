@@ -39,7 +39,7 @@ body {
 }
 
 .animate-pulse {
-    animation: pulse 2s infinite;
+    animation: pulse 0.1s infinite;
 }
 
 @keyframes pulse {
