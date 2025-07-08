@@ -7,6 +7,9 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     const telepon = document.getElementById('telepon').value;
     const kelas = document.getElementById('kelas').value;
     const alasan = document.getElementById('alasan').value;
+    
+addEventListener('submit', function(e) {
+    e.preventDefault();
 
         // Redirect ke grup WhatsApp
         window.location.href = "https://chat.whatsapp.com/DJ8BIXKM3rKq5ZPq4m4PN"; 
