@@ -20,7 +20,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     }
 
     // Kirim data ke Google Sheets
-    fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+    fetch('https://script.google.com/macros/s/https://docs.google.com/spreadsheets/d/1Bt1q0OGfGVoHuOOQflfQLwX0U7uykNzgAfEiFVJDc3k/edit?usp=sharing/exec', {
         method: 'POST',
         body: JSON.stringify({ nama, email, telepon, kelas, alasan }),
         headers: {
