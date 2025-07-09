@@ -12,7 +12,7 @@ addEventListener('submit', function(e) {
     e.preventDefault();
 
         // Redirect ke grup WhatsApp
-        window.location.href = "https://chat.whatsapp.com/DJ8BIXKM3rKq5ZPq4m4PN"; 
+        window.location.href = "https://chat.whatsapp.com/DJU8BIXKM3rKq5ZPq4m4PN?mode=r_c"; 
     })
     
 });
